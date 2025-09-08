@@ -32,25 +32,25 @@ const mockUsers: User[] = [
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   // Stub default user for local testing
-  const [user, setUser] = useState<User | null>({
-    id: '1',
-    name: 'Sarah Johnson',
-    email: 'sarah@example.com',
-    role: 'caregiver',
-    points: 0,
-    level: 1,
-    avatar: 'https://images.pexels.com/photos/1642228/pexels-photo-1642228.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&dpr=1'
-  });
-
-  //   const [user, setUser] = useState<User | null>({
+  // const [user, setUser] = useState<User | null>({
   //   id: '1',
-  //   name: 'Margaret Thompson',
-  //   email: 'margaret@example.com',
-  //   role: 'elderly',
+  //   name: 'Sarah Johnson',
+  //   email: 'sarah@example.com',
+  //   role: 'caregiver',
   //   points: 0,
   //   level: 1,
-  //   avatar: 'https://thumbs.dreamstime.com/b/beautiful-50-year-old-woman-617685.jpg'
+  //   avatar: 'https://images.pexels.com/photos/1642228/pexels-photo-1642228.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&dpr=1'
   // });
+
+    const [user, setUser] = useState<User | null>({
+    id: '1',
+    name: 'Margaret Thompson',
+    email: 'margaret@example.com',
+    role: 'elderly',
+    points: 0,
+    level: 1,
+    avatar: 'https://thumbs.dreamstime.com/b/beautiful-50-year-old-woman-617685.jpg'
+  });
   
   const [isLoading, setIsLoading] = useState(false);
 
